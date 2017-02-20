@@ -6,7 +6,7 @@
     
     <div class = "col-md-6">
       <h1><%= @User.profile.first_name %> <%= @User.profile.last_name %></h1>
-      <h3><%= @User.profile.job_title %></h3>
+      <h3><span class="job-title-icon"><%= job_title_icon %></span><%= @User.profile.job_title %></h3>
       <div class = "well profile-block profile-description">
         <h3>Description</h3>
         <%= @User.profile.description %>
